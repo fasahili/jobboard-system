@@ -21,14 +21,29 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 schema_view = get_schema_view(
-   openapi.Info(
-      title="Job Board API",
-      default_version='v1',
-      description="Documentation for the Job Board system",
-   ),
-   public=True,
-   permission_classes=[permissions.AllowAny],
+    openapi.Info(
+        title="Job Board API – Swagger & Redoc Docs",
+        default_version='v1',
+        description="""
+🔧 **Professional Job Board System**
+
+This API provides the backend for a complete job board platform with:
+
+- 📌 User registration for Companies and Job Seekers
+- 🏢 Job creation and management by companies
+- 🧑‍💼 Applications submitted by job seekers with CV upload
+- 🎯 Application status tracking: Pending / Accepted / Rejected
+- 🔐 Role-based access control: `Admin`, `Company`, `Job Seeker`
+- 📄 Full documentation via Swagger and Redoc
+
+> 🚀 Built with Django REST Framework and JWT Authentication  
+> ⚙️ All operations are permission-protected and can be tested directly here.
+""",
+    ),
+    public=True,
+    permission_classes=[permissions.AllowAny],
 )
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

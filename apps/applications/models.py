@@ -23,3 +23,5 @@ class Application(models.Model):
 
     def __str__(self):
         return f"{self.applicant.username} applied to {self.job.title}"
+
+

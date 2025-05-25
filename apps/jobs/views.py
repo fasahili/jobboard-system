@@ -1,3 +1,4 @@
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, permissions
 from .models import JobPost
 from .serializers import JobPostSerializer
@@ -8,6 +9,8 @@ class JobPostViewSet(viewsets.ModelViewSet):
     queryset = JobPost.objects.all()
     serializer_class = JobPostSerializer
     permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['location', 'employment_type', 'experience_level']
 
     def perform_create(self, serializer):
         user = self.request.user
