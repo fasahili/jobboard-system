@@ -1,6 +1,8 @@
 from rest_framework import viewsets, permissions
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.parsers import MultiPartParser, FormParser
+from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
 from .models import Application
 from .serializers import ApplicationSerializer
@@ -9,7 +11,16 @@ class ApplicationViewSet(viewsets.ModelViewSet):
     queryset = Application.objects.all()
     serializer_class = ApplicationSerializer
     permission_classes = [permissions.IsAuthenticated]
-    parser_classes = [MultiPartParser, FormParser]
+    parser_classes = [MultiPartParser, FormParser,JSONParser]
+
+    @action(detail=False, methods=['get'], url_path='my')
+    def my_applications(self, request):
+        user = request.user
+        if not user.is_authenticated:
+            return Response([], status=401)
+        apps = Application.objects.filter(applicant=user)
+        serializer = self.get_serializer(apps, many=True)
+        return Response(serializer.data)
 
     def get_queryset(self):
         user = self.request.user
