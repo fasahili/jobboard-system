@@ -1,0 +1,62 @@
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.dashboard-card {
+  flex: 1 1 220px;
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  background-color: #1e1e1e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 12px 12px 24px #111, -12px -12px 24px #2a2a2a;
+}
+
+.neumorphic-card {
+  box-shadow: 8px 8px 16px #141414, -8px -8px 16px #2a2a2a;
+}
+
+.dashboard-icon {
+  font-size: 2rem;
+  color: #4aa3ff;
+  margin-right: 1rem;
+}
+
+.dashboard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-title {
+  font-size: 0.85rem;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.dashboard-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.chart-row > .neumorphic {
+  flex: 1 1 320px;
+  max-width: 450px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}

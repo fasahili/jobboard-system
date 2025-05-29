@@ -1,0 +1,23 @@
+.site-footer {
+  background-color: #1b1b1b;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  box-shadow:
+    inset 5px 5px 10px #121212,
+    inset -5px -5px 10px #2a2a2a;
+  color: #bbb;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid #333;
+}
+
+.site-footer a {
+  color: #66b2ff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #66b2ff;
+}

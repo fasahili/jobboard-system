@@ -1,0 +1,80 @@
+.title-db {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-subtext {
+  font-size: 1rem;
+  color: #90a4ae;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.neumorphic {
+  background: #1f1f1f;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px #121212, -8px -8px 20px #2a2a2a;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease-in-out;
+}
+
+.neumorphic:hover {
+  box-shadow: 4px 4px 8px #111, -4px -4px 8px #292929;
+  transform: scale(1.02);
+}
+
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.chart-row h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #e3e3e3;
+}
+
+.dashboard-grid {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.job-seeker-card-1 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.job-seeker-card-2 {
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.job-seeker-card-2::before {
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.count-job-seeker-card {
+  color: #4aa3ff;
+}

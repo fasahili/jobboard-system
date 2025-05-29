@@ -1,0 +1,56 @@
+.add-job-btn {
+  background: linear-gradient(145deg, #34a853, #2e8d47);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px #141414, -4px -4px 10px #2a2a2a;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-job-btn:hover {
+  background: linear-gradient(145deg, #2e8d47, #34a853);
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px #121212, -2px -2px 6px #2c2c2c;
+}
+
+.add-job-btn-rej {
+background: linear-gradient(135deg, #b72c2c, #941f1f);
+
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px #141414, -4px -4px 10px #2a2a2a;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-job-btn-rej:hover {
+background: linear-gradient(135deg, #b72c2c, #941f1f);
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px #121212, -2px -2px 6px #2c2c2c;
+}
+
+
+.add-job-btn-sub {
+background: linear-gradient(135deg, #0d6efd, #0353cc);
+
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px #141414, -4px -4px 10px #2a2a2a;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-job-btn-sub:hover {
+background: linear-gradient(135deg, #0d6efd, #0353cc);
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px #121212, -2px -2px 6px #2c2c2c;
+}

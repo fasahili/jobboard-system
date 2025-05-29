@@ -10,7 +10,6 @@ class Application(models.Model):
         ('accepted', 'Accepted'),
         ('rejected', 'Rejected'),
     ]
-
     applicant = models.ForeignKey(User, on_delete=models.CASCADE, related_name='applications')
     job = models.ForeignKey(JobPost, on_delete=models.CASCADE, related_name='applications')
     cv = models.FileField(upload_to='cv/')
@@ -23,5 +22,4 @@ class Application(models.Model):
 
     def __str__(self):
         return f"{self.applicant.username} applied to {self.job.title}"
-
 
