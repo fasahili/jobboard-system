@@ -2,11 +2,11 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY server/requirements.txt /app/server/requirements.txt
+COPY server/requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip
-RUN pip install -r /app/server/requirements.txt
+RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . .
 
 WORKDIR /app/client
 RUN npm install
