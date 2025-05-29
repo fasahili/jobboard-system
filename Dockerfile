@@ -17,7 +17,6 @@ RUN npm install
 RUN npm run build
 
 WORKDIR /app/server
-RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
 
