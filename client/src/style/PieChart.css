@@ -1,0 +1,21 @@
+.pie-chart-container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.pie-chart-container h6 {
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pie-chart-wrapper {
+  height: 260px;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  position: relative;
+}

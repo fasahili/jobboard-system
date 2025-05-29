@@ -1,0 +1,83 @@
+.job-card {
+  background: #1a1a1a;
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 
+    6px 6px 12px #0f0f0f,
+    -6px -6px 12px #252525;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    8px 8px 20px #0f0f0f,
+    -8px -8px 20px #2a2a2a;
+}
+
+.job-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.job-details p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status-title {
+  color: #aaa;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: inset 1px 1px 4px #111, inset -1px -1px 4px #2e2e2e;
+}
+
+.status-badge.accepted {
+  background: #2b4035;
+  color: #aef5ce;
+}
+
+.status-badge.rejected {
+  background: #422828;
+  color: #f5aaaa;
+}
+
+.status-badge.pending {
+  background: #4d4026;
+  color: #f7db8b;
+}
+
+
+.btn-outline-dark {
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 
+    4px 4px 8px #0f0f0f,
+    -4px -4px 8px #2c2c2c;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+  background: #2d2d2d;
+  color: #fff;
+  box-shadow: inset 2px 2px 6px #111, inset -2px -2px 6px #333;
+}

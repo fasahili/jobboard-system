@@ -1,0 +1,55 @@
+.page-header-wrapper {
+  background-color: #1a1a1a;
+  padding: 1.5rem 0;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+  box-shadow:
+    6px 6px 12px #0f0f0f,
+    -6px -6px 12px #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.page-header-title {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.page-header-subtitle {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+
+.page-header-icon {
+  font-size: 2rem;
+  color: #7ed6df;
+  background: #1a1a1a;
+  padding: 0.6rem;
+  border-radius: 12px;
+  box-shadow:
+    inset 2px 2px 6px #0f0f0f,
+    inset -2px -2px 6px #2e2e2e;
+}
+
+.page-header-action button {
+  border-radius: 12px;
+  padding: 0.45rem 1rem;
+  background: #1a1a1a;
+  color: #eee;
+  border: none;
+  box-shadow:
+    4px 4px 8px #0f0f0f,
+    -4px -4px 8px #2a2a2a;
+  transition: 0.2s ease;
+}
+
+.page-header-action button:hover {
+  background: #2d2d2d;
+  box-shadow:
+    inset 2px 2px 5px #111,
+    inset -2px -2px 5px #333;
+  color: #fff;
+}
