@@ -46,7 +46,7 @@ This API provides the backend for a complete job board platform with:
     permission_classes=[permissions.AllowAny],
 )
 
-
+// test 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/accounts/', include('apps.accounts.urls')),
