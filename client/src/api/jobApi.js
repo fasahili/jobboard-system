@@ -6,7 +6,7 @@ const getToken = () => localStorage.getItem("accessToken");
 const getHeaders = () => ({
   Authorization: `Bearer ${getToken()}`,
 });  
-//test
+
 export const fetchJobs = () =>
   axios.get(`${BASE_URL}/jobs/`, { headers: getHeaders() });
 
