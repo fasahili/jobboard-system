@@ -24,21 +24,21 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-iy_%b6iute%ae9t_ra8*6c3nkx604025cja96v(v7w6g^xaz$a'
+# SECRET_KEY = 'django-insecure-iy_%b6iute%ae9t_ra8*6c3nkx604025cja96v(v7w6g^xaz$a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+# DEBUG = True
 
 
-# env = environ.Env(
-#     DEBUG=(bool, False)
-# )
-# environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-# SECRET_KEY = env('SECRET_KEY')
-# DEBUG = env('DEBUG')
+SECRET_KEY = env('SECRET_KEY')
+DEBUG = env('DEBUG')
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 # DATABASES = {
 #     'default': {
