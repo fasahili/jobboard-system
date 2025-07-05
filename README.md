@@ -4,6 +4,14 @@ A backend REST API for a job board platform that allows companies to post jobs a
 
 ---
 
+
+## 🎬 Demo
+
+![Demo](client/JB-gif.gif)
+
+---
+
+
 ##  Features
 
 - JWT Authentication
